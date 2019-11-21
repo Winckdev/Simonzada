@@ -100,7 +100,8 @@ begin
 									if match = '1' then PE <= NEXT_ROUND; else PE <= RESULT; end if;
 							
 							
-			when RESULT =>		SEL <= '1';
+			when RESULT =>		PE <= RESULT;
+									SEL <= '1';
 			
 									R1 <= '0';
 									R2 <= '0';

@@ -1,5 +1,5 @@
 Timing Analyzer report for Simonzada
-Thu Nov 14 16:56:11 2019
+Thu Nov 21 09:48:11 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -641,7 +641,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 14 16:56:06 2019
+    Info: Processing started: Thu Nov 21 09:48:06 2019
 Info: Command: quartus_sta Simonzada -c Simonzada
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 24 assignments for entity "ghrd_top" -- entity does not exist in design
@@ -726,8 +726,8 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 5145 megabytes
-    Info: Processing ended: Thu Nov 14 16:56:11 2019
+    Info: Peak virtual memory: 5146 megabytes
+    Info: Processing ended: Thu Nov 21 09:48:11 2019
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 

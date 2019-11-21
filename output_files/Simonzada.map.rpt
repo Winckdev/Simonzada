@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Simonzada
-Thu Nov 14 16:55:28 2019
+Thu Nov 21 09:47:22 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 14 16:55:28 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 21 09:47:22 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Simonzada                                   ;
 ; Top-level Entity Name           ; topo                                        ;
@@ -335,7 +335,7 @@ Encoding Type:  One-Hot
 ; datapath:Datap|ButtonSync0:buttonsync|btn0state.EsperaSoltar  ; Lost fanout                          ;
 ; Controle:Control|EA.CHECK                                     ; Lost fanout                          ;
 ; Controle:Control|EA.PLAY_USER                                 ; Stuck at GND due to stuck port clock ;
-; Controle:Control|EA.RESULT                                    ; Lost fanout                          ;
+; Controle:Control|EA.RESULT                                    ; Stuck at GND due to stuck port clock ;
 ; Total Number of Removed Registers = 19                        ;                                      ;
 +---------------------------------------------------------------+--------------------------------------+
 
@@ -345,7 +345,7 @@ Encoding Type:  One-Hot
 +------------------------------------------------------------+--------------------+---------------------------------------------------------------+
 ; Register name                                              ; Reason for Removal ; Registers Removed due to This Register                        ;
 +------------------------------------------------------------+--------------------+---------------------------------------------------------------+
-; Controle:Control|EA.SETUP                                  ; Lost Fanouts       ; Controle:Control|EA.START, Controle:Control|EA.RESULT         ;
+; Controle:Control|EA.SETUP                                  ; Lost Fanouts       ; Controle:Control|EA.START                                     ;
 ; datapath:Datap|ButtonSync0:buttonsync|btn3state.SaidaAtiva ; Lost Fanouts       ; datapath:Datap|ButtonSync0:buttonsync|btn3state.EsperaApertar ;
 ; datapath:Datap|ButtonSync0:buttonsync|btn2state.SaidaAtiva ; Lost Fanouts       ; datapath:Datap|ButtonSync0:buttonsync|btn2state.EsperaApertar ;
 ; datapath:Datap|ButtonSync0:buttonsync|btn1state.SaidaAtiva ; Lost Fanouts       ; datapath:Datap|ButtonSync0:buttonsync|btn1state.EsperaApertar ;
@@ -527,7 +527,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 14 16:55:17 2019
+    Info: Processing started: Thu Nov 21 09:47:09 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Simonzada -c Simonzada
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -692,13 +692,6 @@ Info (12128): Elaborating entity "Controle" for hierarchy "Controle:Control" Fil
 Warning (10492): VHDL Process Statement warning at Controle.vhd(22): signal "clock" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/Controle.vhd Line: 22
 Warning (10492): VHDL Process Statement warning at Controle.vhd(60): signal "enter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/Controle.vhd Line: 60
 Warning (10631): VHDL Process Statement warning at Controle.vhd(28): inferring latch(es) for signal or variable "PE", which holds its previous value in one or more paths through the process File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/Controle.vhd Line: 28
-Info (10041): Inferred latch for "PE.NEXT_ROUND" at Controle.vhd(28) File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/Controle.vhd Line: 28
-Info (10041): Inferred latch for "PE.RESULT" at Controle.vhd(28) File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/Controle.vhd Line: 28
-Info (10041): Inferred latch for "PE.CHECK" at Controle.vhd(28) File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/Controle.vhd Line: 28
-Info (10041): Inferred latch for "PE.PLAY_USER" at Controle.vhd(28) File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/Controle.vhd Line: 28
-Info (10041): Inferred latch for "PE.PLAY_FPGA" at Controle.vhd(28) File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/Controle.vhd Line: 28
-Info (10041): Inferred latch for "PE.SETUP" at Controle.vhd(28) File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/Controle.vhd Line: 28
-Info (10041): Inferred latch for "PE.START" at Controle.vhd(28) File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/Controle.vhd Line: 28
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/topo.vhd Line: 9
     Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/topo.vhd Line: 9
@@ -752,7 +745,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/topo.vhd Line: 10
     Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/topo.vhd Line: 10
     Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/Biel/Desktop/Aula/Circuitos 1/Projet/Projeto/Simonzada 4 fodase/topo.vhd Line: 10
-Info (17049): 18 registers lost all their fanouts during netlist optimizations.
+Info (17049): 17 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 24 assignments for entity "ghrd_top" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ghrd_top -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity ghrd_top -section_id Top was ignored
@@ -800,9 +793,9 @@ Info (21057): Implemented 67 device resources after synthesis - the final resour
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 170 warnings
-    Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Thu Nov 14 16:55:28 2019
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4880 megabytes
+    Info: Processing ended: Thu Nov 21 09:47:22 2019
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
 
 

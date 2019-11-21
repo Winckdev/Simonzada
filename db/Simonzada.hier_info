@@ -2186,21 +2186,21 @@ COMP_end <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topo|Controle:Control
-enter => Selector8.IN6
-enter => Selector10.IN3
+enter => Selector1.IN5
+enter => Selector0.IN3
 reset => EA~3.DATAIN
 clock => EA~1.DATAIN
-end_FPGA => Selector5.IN4
-end_FPGA => Selector8.IN2
+end_FPGA => Selector2.IN3
+end_FPGA => Selector1.IN2
 end_User => PE.DATAA
 end_User => PE.DATAA
 end_time => PE.OUTPUTSELECT
 end_time => PE.OUTPUTSELECT
-end_time => Selector1.IN4
-win => Selector1.IN5
-win => Selector8.IN4
-match => Selector3.IN1
-match => Selector1.IN2
+end_time => Selector3.IN4
+win => Selector3.IN5
+win => Selector1.IN3
+match => Selector4.IN1
+match => Selector3.IN2
 R1 <= R1.DB_MAX_OUTPUT_PORT_TYPE
 R2 <= R2.DB_MAX_OUTPUT_PORT_TYPE
 E1 <= E1.DB_MAX_OUTPUT_PORT_TYPE
