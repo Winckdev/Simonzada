@@ -209,4 +209,52 @@ begin
 	luz (3 downto 0) <= OUT_FPGA (63 downto 60);
 	luz (9 downto 6) <= not botao (3 downto 0);
 
+	display5 <= mux214O;
+	display4 <= mux215O;
+	display3 <= mux216O;
+	display2 <= mux217O;
+	display1 <= mux218O;
+	display0 <= mux219O;
+	 
+	 
+	
+	fim_fpga <= END_FPGA;
+	fim_user <= END_USER;
+	fim_time <= END_TIME;
+	
+	vitoria <= WIN;
+	
+	partida <= MATCH;
+	
+	KEY0 <= botao(0);
+	KEY1 <= botao(1);
+	KEY2 <= botao(2);
+	KEY3 <= botao(3);
+	
+	R1 <= RST1;
+	R2 <= RST2;
+	
+	E1 <= EN1;
+	E2 <= EN2;
+	E3 <= EN3;
+	E4 <= EN4;
+	
+	SEL <= SELETOR;
+	
+	t <= "0000111";
+	L <= "1000111";
+	F <= "0001110";
+	U <= "1000001";
+	P <= "0001100";
+	S <= "0010010";
+	g <= "0010000";
+	E <= "0000110";
+	A <= "0001000";
+	r <= "0101111";
+	
+	
+	SW(9 downto 2) <= switch(9 downto 2);
+
+	CLOCK_50 <= CLK;
+	
 end datapath1;

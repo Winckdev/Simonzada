@@ -1,5 +1,245 @@
 ------------------------------------------------------------
-Timing Analyzer Summary
+TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -3.977
+TNS   : -195.229
+
+Type  : Slow 1100mV 85C Model Setup 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -3.631
+TNS   : -177.065
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.389
+TNS   : -250.767
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -0.381
+TNS   : -0.798
+
+Type  : Slow 1100mV 85C Model Hold 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : 1.048
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -3.269
+TNS   : -211.329
+
+Type  : Slow 1100mV 85C Model Recovery 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -2.923
+TNS   : -196.953
+
+Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : -2.001
+TNS   : -139.483
+
+Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.888
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : 1.047
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : 1.609
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -0.658
+TNS   : -44.928
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -0.404
+TNS   : -49.095
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -78.878
+
+Type  : Slow 1100mV 0C Model Setup 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -4.134
+TNS   : -194.420
+
+Type  : Slow 1100mV 0C Model Setup 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -3.777
+TNS   : -180.165
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.329
+TNS   : -237.630
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.657
+TNS   : -1.765
+
+Type  : Slow 1100mV 0C Model Hold 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : 0.006
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : 0.919
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -3.416
+TNS   : -221.071
+
+Type  : Slow 1100mV 0C Model Recovery 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -3.059
+TNS   : -206.510
+
+Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -1.893
+TNS   : -132.648
+
+Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.821
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : 1.188
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : 1.744
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -0.640
+TNS   : -45.705
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -0.426
+TNS   : -49.486
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.423
+TNS   : -84.249
+
+Type  : Fast 1100mV 85C Model Setup 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -1.987
+TNS   : -104.751
+
+Type  : Fast 1100mV 85C Model Setup 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -1.812
+TNS   : -85.542
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -1.796
+TNS   : -112.460
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -0.306
+TNS   : -0.796
+
+Type  : Fast 1100mV 85C Model Hold 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -0.105
+TNS   : -0.164
+
+Type  : Fast 1100mV 85C Model Hold 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -1.485
+TNS   : -93.956
+
+Type  : Fast 1100mV 85C Model Recovery 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -1.310
+TNS   : -85.768
+
+Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : -1.066
+TNS   : -37.068
+
+Type  : Fast 1100mV 85C Model Removal 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.496
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : 0.739
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.464
+TNS   : -13.980
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -0.385
+TNS   : -1.681
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -0.154
+TNS   : -6.093
+
+Type  : Fast 1100mV 0C Model Setup 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -1.919
+TNS   : -90.602
+
+Type  : Fast 1100mV 0C Model Setup 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -1.765
+TNS   : -75.827
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -1.535
+TNS   : -90.501
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.459
+TNS   : -1.678
+
+Type  : Fast 1100mV 0C Model Hold 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -0.178
+TNS   : -0.509
+
+Type  : Fast 1100mV 0C Model Hold 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -1.463
+TNS   : -93.110
+
+Type  : Fast 1100mV 0C Model Recovery 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -1.309
+TNS   : -86.452
+
+Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -0.847
+TNS   : -24.998
+
+Type  : Fast 1100mV 0C Model Removal 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.441
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : 0.774
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.479
+TNS   : -13.559
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'datapath:Datap|div_freq:DIVFREQ0|C1Hz'
+Slack : -0.275
+TNS   : -1.096
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'datapath:Datap|div_freq:DIVFREQ0|C05Hz'
+Slack : -0.111
+TNS   : -3.351
 
 ------------------------------------------------------------

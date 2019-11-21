@@ -41,16 +41,8 @@ set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY topo
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:59:14  NOVEMBER 10, 2019"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name VHDL_FILE Controle.vhd
-set_global_assignment -name VHDL_FILE mux41vetor.vhd
-set_global_assignment -name VHDL_FILE buttonsync.vhd
-set_global_assignment -name VHDL_FILE SEQ0.vhd
-set_global_assignment -name VHDL_FILE datapath.vhd
-set_global_assignment -name VHDL_FILE SEQ1.vhd
-set_global_assignment -name VHDL_FILE SEQ2.vhd
-set_global_assignment -name VHDL_FILE SEQ3.vhd
 set_location_assignment PIN_AJ4 -to ADC_CS_N
 set_location_assignment PIN_AK4 -to ADC_DIN
 set_location_assignment PIN_AK3 -to ADC_DOUT
@@ -299,7 +291,27 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity g
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE topo.vhd
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VHDL_FILE Regis64.vhd
+set_global_assignment -name VHDL_FILE Regis8.vhd
+set_global_assignment -name VHDL_FILE mux41.vhd
+set_global_assignment -name VHDL_FILE mux21.vhd
+set_global_assignment -name VHDL_FILE logico0.vhd
+set_global_assignment -name VHDL_FILE div_freq.vhd
+set_global_assignment -name VHDL_FILE decod7seg.vhd
+set_global_assignment -name VHDL_FILE contador.vhd
+set_global_assignment -name VHDL_FILE comparador0.vhd
+set_global_assignment -name VHDL_FILE COMP.vhd
+set_global_assignment -name VHDL_FILE Controle.vhd
+set_global_assignment -name VHDL_FILE mux41vetor.vhd
+set_global_assignment -name VHDL_FILE buttonsync.vhd
+set_global_assignment -name VHDL_FILE SEQ0.vhd
+set_global_assignment -name VHDL_FILE datapath.vhd
+set_global_assignment -name VHDL_FILE SEQ1.vhd
+set_global_assignment -name VHDL_FILE SEQ2.vhd
+set_global_assignment -name VHDL_FILE SEQ3.vhd
+set_global_assignment -name VHDL_FILE topo.vhd
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

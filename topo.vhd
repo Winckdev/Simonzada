@@ -49,4 +49,22 @@ begin
 Datap: datapath port map (BTN, R1, R2, E1, E2, E3, E4, SEL, SWITCH (9 downto 2), LEDRED, HEXA5, HEXA4, HEXA3, HEXA2, HEXA1, HEXA0, END_FPGA, END_USER, END_TIME, WIN, MATCH, CLK50);
 Control: Controle port map (SWITCH(0), SWITCH(1), CLK50, END_FPGA, END_USER, END_TIME, WIN, MATCH, R1, R2, E1, E2, E3, E4, SEL);
 
+HEX5 <= HEXA5;
+HEX4 <= HEXA4;
+HEX3 <= HEXA3;
+HEX2 <= HEXA2;
+HEX1 <= HEXA1;
+HEX0 <= HEXA0;
+
+LEDR <= LEDRED;
+
+SWITCH (9 downto 2) <= SW (9 downto 2);
+SWITCH(1) <= SW(1);
+SWITCH(0) <= SW(0);
+
+CLK50 <= CLOCK_50;
+
+BTN <= KEY;
+
+
 end topinho;

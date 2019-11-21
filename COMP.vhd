@@ -4,7 +4,7 @@ use IEEE.std_logic_unsigned.all;
 
 entity COMP is
 	port(	OUT_FPGA, OUT_User: in std_logic_vector(63 downto 0);
-			COMP_end: in std_logic
+			COMP_end: out std_logic
 	);
 end COMP;
 
