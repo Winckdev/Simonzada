@@ -7,7 +7,8 @@ entity datapath is
 port(botao: in std_logic_vector(3 downto 0); -- Botao
 	RST1,RST2,EN1,EN2,EN3,EN4,SELETOR: in std_logic; -- Entradas vindas do controle
 	switch: in std_logic_vector(9 downto 2); -- SW
-	luz: out std_logic_vector (9 downto 0); -- LEDR
+	luz96: out std_logic_vector (9 downto 6); -- LEDR96
+	luz30: out std_logic_vector (3 downto 0); -- LEDR30
 	display5, display4, display3, display2, display1, display0: out std_logic_vector(6 downto 0); -- Display
 	fim_fpga, fim_user, fim_time, vitoria, partida: out std_logic; -- Saidas que vao para o controle
 	CLK: std_logic -- CLOCK
@@ -189,10 +190,10 @@ begin
 	REG_User: Regis64 port map (CLOCK_50, R2, ((NBTN0 OR NBTN1 OR NBTN2 OR NBTN3) AND E2), (NBTN3 & NBTN2 & NBTN1 & NBTN0 & OUT_USER(63 downto 4)), OUT_USER);
 	REG_setup: Regis8 port map (CLOCK_50, R1, E1, SW( 9 downto 2), SETUP);
 	DIVFREQ0: div_freq port map (R1, CLOCK_50, CLOCK05HZ, CLOCK1HZ, CLOCK2HZ, CLOCK3HZ);
-	COUNTER_ROUND: contador port map (SETUP (3 downto 0), CLOCK_50, R1, E4, ROUND, WIN);
-	COUNTER_TIME: contador port map ("1010", CLOCK1HZ, R2, E2, TIEMPO, END_TIME);
-	COUNTER_FPGA: contador port map (ROUND, CLOCKHZ, R2, E3, SEQFPGA, END_FPGA);
-	COUNTER_USER: contador port map (ROUND, CLOCK_50, R2, (E2 AND (NBTN0 OR NBTN1 OR NBTN2 OR NBTN3)), SEQUSER, END_USER);
+	COUNTER_ROUND: contador port map (SETUP (3 downto 0), CLOCK_50, E4, R1, ROUND, WIN);
+	COUNTER_TIME: contador port map ("1010", CLOCK1HZ, E2, R2, TIEMPO, END_TIME);
+	COUNTER_FPGA: contador port map (ROUND, CLOCKHZ, E3, R2, SEQFPGA, END_FPGA);
+	COUNTER_USER: contador port map (ROUND, CLOCK_50, E2 AND (NBTN0 OR NBTN1 OR NBTN2 OR NBTN3), R2, SEQUSER, END_USER);
 	SEQUENCIA0: SEQ0 port map (SEQFPGA, SEQ0O);
 	SEQUENCIA1:	SEQ1 port map (SEQFPGA, SEQ1O);
 	SEQUENCIA2: SEQ2 port map (SEQFPGA, SEQ2O);
@@ -206,8 +207,8 @@ begin
 	NBTN3 <= not BTN3;
 
 	MATCH <= (END_USER AND COMPOUT);
-	luz (3 downto 0) <= OUT_FPGA (63 downto 60);
-	luz (9 downto 6) <= not botao (3 downto 0);
+	luz30 (3 downto 0) <= OUT_FPGA (63 downto 60);
+	luz96 (9 downto 6) <= not botao (3 downto 0);
 
 	display5 <= mux214O;
 	display4 <= mux215O;

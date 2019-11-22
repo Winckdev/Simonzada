@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Nov 21 11:56:59 2019
-Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Analysis & Synthesis Status : Successful - Thu Nov 21 16:05:28 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Simonzada
 Top-level Entity Name : topo
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 199
+Total registers : 52
 Total pins : 67
 Total virtual pins : 0
 Total block memory bits : 0

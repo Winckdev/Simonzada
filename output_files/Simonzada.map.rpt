@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Simonzada
-Thu Nov 21 11:56:59 2019
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Thu Nov 21 16:05:28 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -20,65 +20,65 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
  12. State Machine - |topo|datapath:Datap|ButtonSync0:buttonsync|btn0state
  13. User-Specified and Inferred Latches
  14. Registers Removed During Synthesis
- 15. General Register Statistics
- 16. Multiplexer Restructuring Statistics (Restructuring Performed)
- 17. Port Connectivity Checks: "datapath:Datap|contador:COUNTER_USER"
- 18. Port Connectivity Checks: "datapath:Datap|contador:COUNTER_TIME"
- 19. Port Connectivity Checks: "datapath:Datap|decod7seg:DECODIFICADOR0"
- 20. Port Connectivity Checks: "datapath:Datap|mux21:MUX218"
- 21. Port Connectivity Checks: "datapath:Datap|mux21:MUX216"
- 22. Port Connectivity Checks: "datapath:Datap|mux21:MUX214"
- 23. Port Connectivity Checks: "datapath:Datap|mux21:MUX213"
- 24. Port Connectivity Checks: "datapath:Datap|mux21:MUX212"
- 25. Port Connectivity Checks: "datapath:Datap|mux21:MUX211"
- 26. Port Connectivity Checks: "datapath:Datap|mux21:MUX210"
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Port Connectivity Checks: "datapath:Datap|contador:COUNTER_USER"
+ 19. Port Connectivity Checks: "datapath:Datap|contador:COUNTER_TIME"
+ 20. Port Connectivity Checks: "datapath:Datap|decod7seg:DECODIFICADOR0"
+ 21. Port Connectivity Checks: "datapath:Datap|mux21:MUX218"
+ 22. Port Connectivity Checks: "datapath:Datap|mux21:MUX216"
+ 23. Port Connectivity Checks: "datapath:Datap|mux21:MUX214"
+ 24. Port Connectivity Checks: "datapath:Datap|mux21:MUX213"
+ 25. Port Connectivity Checks: "datapath:Datap|mux21:MUX212"
+ 26. Port Connectivity Checks: "datapath:Datap|mux21:MUX211"
+ 27. Port Connectivity Checks: "datapath:Datap|mux21:MUX210"
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                 ;
-+---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 21 11:56:59 2019      ;
-; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
-; Revision Name                   ; Simonzada                                  ;
-; Top-level Entity Name           ; topo                                       ;
-; Family                          ; Cyclone V                                  ;
-; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 199                                        ;
-; Total pins                      ; 67                                         ;
-; Total virtual pins              ; 0                                          ;
-; Total block memory bits         ; 0                                          ;
-; Total DSP Blocks                ; 0                                          ;
-; Total HSSI RX PCSs              ; 0                                          ;
-; Total HSSI PMA RX Deserializers ; 0                                          ;
-; Total HSSI TX PCSs              ; 0                                          ;
-; Total HSSI PMA TX Serializers   ; 0                                          ;
-; Total PLLs                      ; 0                                          ;
-; Total DLLs                      ; 0                                          ;
-+---------------------------------+--------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Nov 21 16:05:28 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; Simonzada                                   ;
+; Top-level Entity Name           ; topo                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 52                                          ;
+; Total pins                      ; 67                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -90,13 +90,13 @@ agreement for further details.
 ; Top-level entity name                                                           ; topo               ; Simonzada          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
 ; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
 ; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
 ; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                        ; Auto               ; Auto               ;
@@ -147,7 +147,7 @@ agreement for further details.
 ; Report Connectivity Checks                                                      ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                               ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
@@ -163,7 +163,6 @@ agreement for further details.
 ; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Synthesis Seed                                                                  ; 1                  ; 1                  ;
 ; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
 ; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -174,100 +173,92 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                   ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                            ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------+---------+
-; Regis64.vhd                      ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/Regis64.vhd     ;         ;
-; Regis8.vhd                       ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/Regis8.vhd      ;         ;
-; mux41.vhd                        ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/mux41.vhd       ;         ;
-; mux21.vhd                        ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/mux21.vhd       ;         ;
-; logico0.vhd                      ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/logico0.vhd     ;         ;
-; div_freq.vhd                     ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/div_freq.vhd    ;         ;
-; decod7seg.vhd                    ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/decod7seg.vhd   ;         ;
-; contador.vhd                     ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/contador.vhd    ;         ;
-; comparador0.vhd                  ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/comparador0.vhd ;         ;
-; Controle.vhd                     ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/Controle.vhd    ;         ;
-; mux41vetor.vhd                   ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/mux41vetor.vhd  ;         ;
-; buttonsync.vhd                   ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/buttonsync.vhd  ;         ;
-; SEQ0.vhd                         ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/SEQ0.vhd        ;         ;
-; datapath.vhd                     ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/datapath.vhd    ;         ;
-; SEQ1.vhd                         ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/SEQ1.vhd        ;         ;
-; SEQ2.vhd                         ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/SEQ2.vhd        ;         ;
-; SEQ3.vhd                         ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/SEQ3.vhd        ;         ;
-; topo.vhd                         ; yes             ; User VHDL File  ; /home/alunos/Desktop/Simonzada 4 fodase/topo.vhd        ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; Regis64.vhd                      ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/Regis64.vhd     ;         ;
+; Regis8.vhd                       ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/Regis8.vhd      ;         ;
+; mux41.vhd                        ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/mux41.vhd       ;         ;
+; mux21.vhd                        ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/mux21.vhd       ;         ;
+; logico0.vhd                      ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/logico0.vhd     ;         ;
+; div_freq.vhd                     ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/div_freq.vhd    ;         ;
+; decod7seg.vhd                    ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/decod7seg.vhd   ;         ;
+; contador.vhd                     ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/contador.vhd    ;         ;
+; comparador0.vhd                  ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/comparador0.vhd ;         ;
+; Controle.vhd                     ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/Controle.vhd    ;         ;
+; mux41vetor.vhd                   ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/mux41vetor.vhd  ;         ;
+; buttonsync.vhd                   ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/buttonsync.vhd  ;         ;
+; SEQ0.vhd                         ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/SEQ0.vhd        ;         ;
+; datapath.vhd                     ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd    ;         ;
+; SEQ1.vhd                         ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/SEQ1.vhd        ;         ;
+; SEQ2.vhd                         ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/SEQ2.vhd        ;         ;
+; SEQ3.vhd                         ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/SEQ3.vhd        ;         ;
+; topo.vhd                         ; yes             ; User VHDL File  ; C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd        ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                            ;
-+---------------------------------------------+--------------------------+
-; Resource                                    ; Usage                    ;
-+---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 140                      ;
-;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 177                      ;
-;     -- 7 input functions                    ; 7                        ;
-;     -- 6 input functions                    ; 41                       ;
-;     -- 5 input functions                    ; 24                       ;
-;     -- 4 input functions                    ; 33                       ;
-;     -- <=3 input functions                  ; 72                       ;
-;                                             ;                          ;
-; Dedicated logic registers                   ; 199                      ;
-;                                             ;                          ;
-; I/O pins                                    ; 67                       ;
-;                                             ;                          ;
-; Total DSP Blocks                            ; 0                        ;
-;                                             ;                          ;
-; Maximum fan-out node                        ; Controle:Control|WideOr5 ;
-; Maximum fan-out                             ; 138                      ;
-; Total fan-out                               ; 1563                     ;
-; Average fan-out                             ; 3.06                     ;
-+---------------------------------------------+--------------------------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 63             ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 109            ;
+;     -- 7 input functions                    ; 7              ;
+;     -- 6 input functions                    ; 8              ;
+;     -- 5 input functions                    ; 7              ;
+;     -- 4 input functions                    ; 25             ;
+;     -- <=3 input functions                  ; 62             ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 52             ;
+;                                             ;                ;
+; I/O pins                                    ; 67             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 49             ;
+; Total fan-out                               ; 670            ;
+; Average fan-out                             ; 2.27           ;
++---------------------------------------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
-+----------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
-; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Library Name ;
-+----------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
-; |topo                            ; 177 (0)           ; 199 (0)      ; 0                 ; 0          ; 67   ; 0            ; |topo                                         ; work         ;
-;    |Controle:Control|            ; 11 (11)           ; 7 (7)        ; 0                 ; 0          ; 0    ; 0            ; |topo|Controle:Control                        ; work         ;
-;    |datapath:Datap|              ; 166 (27)          ; 192 (0)      ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap                          ; work         ;
-;       |ButtonSync0:buttonsync|   ; 8 (8)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|ButtonSync0:buttonsync   ; work         ;
-;       |Regis64:REG_FPGA|         ; 0 (0)             ; 64 (64)      ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|Regis64:REG_FPGA         ; work         ;
-;       |Regis64:REG_User|         ; 0 (0)             ; 64 (64)      ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|Regis64:REG_User         ; work         ;
-;       |Regis8:REG_setup|         ; 0 (0)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|Regis8:REG_setup         ; work         ;
-;       |contador:COUNTER_FPGA|    ; 6 (6)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|contador:COUNTER_FPGA    ; work         ;
-;       |contador:COUNTER_ROUND|   ; 7 (7)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|contador:COUNTER_ROUND   ; work         ;
-;       |contador:COUNTER_TIME|    ; 4 (4)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|contador:COUNTER_TIME    ; work         ;
-;       |contador:COUNTER_USER|    ; 6 (6)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|contador:COUNTER_USER    ; work         ;
-;       |decod7seg:DECODIFICADOR0| ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|decod7seg:DECODIFICADOR0 ; work         ;
-;       |decod7seg:DECODIFICADOR1| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|decod7seg:DECODIFICADOR1 ; work         ;
-;       |decod7seg:DECODIFICADOR2| ; 22 (22)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|decod7seg:DECODIFICADOR2 ; work         ;
-;       |div_freq:DIVFREQ0|        ; 43 (43)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|div_freq:DIVFREQ0        ; work         ;
-;       |mux21:MUX214|             ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux21:MUX214             ; work         ;
-;       |mux21:MUX215|             ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux21:MUX215             ; work         ;
-;       |mux21:MUX217|             ; 10 (10)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux21:MUX217             ; work         ;
-;       |mux21:MUX218|             ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux21:MUX218             ; work         ;
-;       |mux21:MUX219|             ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux21:MUX219             ; work         ;
-;       |mux41:MUX410|             ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux41:MUX410             ; work         ;
-;       |mux41vetor:MUX411|        ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux41vetor:MUX411        ; work         ;
-+----------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                    ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Entity Name ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------+-------------+--------------+
+; |topo                            ; 109 (0)             ; 52 (0)                    ; 0                 ; 0          ; 67   ; 0            ; |topo                                         ; topo        ; work         ;
+;    |Controle:Control|            ; 6 (6)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|Controle:Control                        ; Controle    ; work         ;
+;    |datapath:Datap|              ; 103 (0)             ; 47 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap                          ; datapath    ; work         ;
+;       |Regis64:REG_FPGA|         ; 0 (0)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|Regis64:REG_FPGA         ; Regis64     ; work         ;
+;       |Regis8:REG_setup|         ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|Regis8:REG_setup         ; Regis8      ; work         ;
+;       |contador:COUNTER_ROUND|   ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|contador:COUNTER_ROUND   ; contador    ; work         ;
+;       |decod7seg:DECODIFICADOR0| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|decod7seg:DECODIFICADOR0 ; decod7seg   ; work         ;
+;       |decod7seg:DECODIFICADOR2| ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|decod7seg:DECODIFICADOR2 ; decod7seg   ; work         ;
+;       |decod7seg:DECODIFICADOR4| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|decod7seg:DECODIFICADOR4 ; decod7seg   ; work         ;
+;       |div_freq:DIVFREQ0|        ; 43 (43)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|div_freq:DIVFREQ0        ; div_freq    ; work         ;
+;       |mux21:MUX214|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux21:MUX214             ; mux21       ; work         ;
+;       |mux21:MUX215|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux21:MUX215             ; mux21       ; work         ;
+;       |mux21:MUX218|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux21:MUX218             ; mux21       ; work         ;
+;       |mux21:MUX219|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux21:MUX219             ; mux21       ; work         ;
+;       |mux41:MUX410|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topo|datapath:Datap|mux41:MUX410             ; mux41       ; work         ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -352,17 +343,114 @@ Encoding Type:  One-Hot
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                ;
-+--------------------------------------------------------------+--------------------+
-; Register name                                                ; Reason for Removal ;
-+--------------------------------------------------------------+--------------------+
-; datapath:Datap|ButtonSync0:buttonsync|btn3state.EsperaSoltar ; Lost fanout        ;
-; datapath:Datap|ButtonSync0:buttonsync|btn2state.EsperaSoltar ; Lost fanout        ;
-; datapath:Datap|ButtonSync0:buttonsync|btn1state.EsperaSoltar ; Lost fanout        ;
-; datapath:Datap|ButtonSync0:buttonsync|btn0state.EsperaSoltar ; Lost fanout        ;
-; Total Number of Removed Registers = 4                        ;                    ;
-+--------------------------------------------------------------+--------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                           ;
++------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+; Register name                                                                                                                                  ; Reason for Removal                          ;
++------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+; datapath:Datap|contador:COUNTER_TIME|tot[0..3]                                                                                                 ; Stuck at GND due to stuck port clock_enable ;
+; datapath:Datap|contador:COUNTER_FPGA|tot[0..3]                                                                                                 ; Stuck at GND due to stuck port clock_enable ;
+; datapath:Datap|contador:COUNTER_USER|tot[0..3]                                                                                                 ; Stuck at GND due to stuck port clock_enable ;
+; datapath:Datap|Regis64:REG_FPGA|Q[2,6,10,14,18,22,26,30,34,38,42,46,50,54,58,62]                                                               ; Stuck at GND due to stuck port data_in      ;
+; datapath:Datap|ButtonSync0:buttonsync|btn3state.EsperaSoltar                                                                                   ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn2state.EsperaSoltar                                                                                   ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn1state.EsperaSoltar                                                                                   ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn0state.EsperaSoltar                                                                                   ; Lost fanout                                 ;
+; Controle:Control|EA.CHECK                                                                                                                      ; Stuck at GND due to stuck port data_in      ;
+; datapath:Datap|Regis64:REG_FPGA|Q[3,7,11,15,19,23,27,31,35,39,43,47,51,55,59]                                                                  ; Lost fanout                                 ;
+; datapath:Datap|Regis64:REG_User|Q[2,6,10,14,18,22,26,30,34,38,42,46,50,54,58,62]                                                               ; Lost fanout                                 ;
+; datapath:Datap|Regis64:REG_FPGA|Q[0,1,4,5,8,9,12,13,16,17,20,21,24,25,28,29,32,33,36,37,40,41,44,45,48,49,52,53,56,57]                         ; Lost fanout                                 ;
+; datapath:Datap|Regis64:REG_User|Q[0,1,3..5,7..9,11..13,15..17,19..21,23..25,27..29,31..33,35..37,39..41,43..45,47..49,51..53,55..57,59..61,63] ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn0state.SaidaAtiva                                                                                     ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn0state.EsperaApertar                                                                                  ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn1state.SaidaAtiva                                                                                     ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn1state.EsperaApertar                                                                                  ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn2state.SaidaAtiva                                                                                     ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn2state.EsperaApertar                                                                                  ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn3state.SaidaAtiva                                                                                     ; Lost fanout                                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn3state.EsperaApertar                                                                                  ; Lost fanout                                 ;
+; Controle:Control|EA.NEXT_ROUND                                                                                                                 ; Stuck at GND due to stuck port data_in      ;
+; Total Number of Removed Registers = 151                                                                                                        ;                                             ;
++------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                   ;
++--------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------+
+; Register name                                                ; Reason for Removal             ; Registers Removed due to This Register                                        ;
++--------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------+
+; datapath:Datap|Regis64:REG_User|Q[2]                         ; Lost Fanouts                   ; datapath:Datap|Regis64:REG_User|Q[6], datapath:Datap|Regis64:REG_User|Q[10],  ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[14], datapath:Datap|Regis64:REG_User|Q[18], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[22], datapath:Datap|Regis64:REG_User|Q[26], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[30], datapath:Datap|Regis64:REG_User|Q[34], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[38], datapath:Datap|Regis64:REG_User|Q[42], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[46], datapath:Datap|Regis64:REG_User|Q[50], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[54], datapath:Datap|Regis64:REG_User|Q[58], ;
+;                                                              ;                                ; datapath:Datap|ButtonSync0:buttonsync|btn0state.SaidaAtiva,                   ;
+;                                                              ;                                ; datapath:Datap|ButtonSync0:buttonsync|btn1state.SaidaAtiva,                   ;
+;                                                              ;                                ; datapath:Datap|ButtonSync0:buttonsync|btn2state.SaidaAtiva,                   ;
+;                                                              ;                                ; datapath:Datap|ButtonSync0:buttonsync|btn3state.SaidaAtiva                    ;
+; datapath:Datap|Regis64:REG_User|Q[3]                         ; Lost Fanouts                   ; datapath:Datap|Regis64:REG_User|Q[7], datapath:Datap|Regis64:REG_User|Q[11],  ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[15], datapath:Datap|Regis64:REG_User|Q[19], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[23], datapath:Datap|Regis64:REG_User|Q[27], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[31], datapath:Datap|Regis64:REG_User|Q[35], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[39], datapath:Datap|Regis64:REG_User|Q[43], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[47], datapath:Datap|Regis64:REG_User|Q[51], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[55], datapath:Datap|Regis64:REG_User|Q[59], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[63]                                         ;
+; datapath:Datap|Regis64:REG_User|Q[1]                         ; Lost Fanouts                   ; datapath:Datap|Regis64:REG_User|Q[5], datapath:Datap|Regis64:REG_User|Q[9],   ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[13], datapath:Datap|Regis64:REG_User|Q[17], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[21], datapath:Datap|Regis64:REG_User|Q[25], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[29], datapath:Datap|Regis64:REG_User|Q[33], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[37], datapath:Datap|Regis64:REG_User|Q[41], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[45], datapath:Datap|Regis64:REG_User|Q[49], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[53], datapath:Datap|Regis64:REG_User|Q[57], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[61]                                         ;
+; datapath:Datap|Regis64:REG_User|Q[0]                         ; Lost Fanouts                   ; datapath:Datap|Regis64:REG_User|Q[4], datapath:Datap|Regis64:REG_User|Q[8],   ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[12], datapath:Datap|Regis64:REG_User|Q[16], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[20], datapath:Datap|Regis64:REG_User|Q[24], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[28], datapath:Datap|Regis64:REG_User|Q[32], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[36], datapath:Datap|Regis64:REG_User|Q[40], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[44], datapath:Datap|Regis64:REG_User|Q[48], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[52], datapath:Datap|Regis64:REG_User|Q[56], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_User|Q[60]                                         ;
+; datapath:Datap|Regis64:REG_FPGA|Q[58]                        ; Stuck at GND                   ; datapath:Datap|Regis64:REG_FPGA|Q[54], datapath:Datap|Regis64:REG_FPGA|Q[50], ;
+;                                                              ; due to stuck port data_in      ; datapath:Datap|Regis64:REG_FPGA|Q[46], datapath:Datap|Regis64:REG_FPGA|Q[42], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[38], datapath:Datap|Regis64:REG_FPGA|Q[34], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[30], datapath:Datap|Regis64:REG_FPGA|Q[26], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[22], datapath:Datap|Regis64:REG_FPGA|Q[18], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[14], datapath:Datap|Regis64:REG_FPGA|Q[10], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[6], datapath:Datap|Regis64:REG_FPGA|Q[2]    ;
+; datapath:Datap|Regis64:REG_FPGA|Q[1]                         ; Lost Fanouts                   ; datapath:Datap|Regis64:REG_FPGA|Q[5], datapath:Datap|Regis64:REG_FPGA|Q[9],   ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[13], datapath:Datap|Regis64:REG_FPGA|Q[17], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[21], datapath:Datap|Regis64:REG_FPGA|Q[25], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[29], datapath:Datap|Regis64:REG_FPGA|Q[33], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[37], datapath:Datap|Regis64:REG_FPGA|Q[41], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[45], datapath:Datap|Regis64:REG_FPGA|Q[49], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[53]                                         ;
+; datapath:Datap|Regis64:REG_FPGA|Q[0]                         ; Lost Fanouts                   ; datapath:Datap|Regis64:REG_FPGA|Q[4], datapath:Datap|Regis64:REG_FPGA|Q[8],   ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[12], datapath:Datap|Regis64:REG_FPGA|Q[16], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[20], datapath:Datap|Regis64:REG_FPGA|Q[24], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[28], datapath:Datap|Regis64:REG_FPGA|Q[32], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[36], datapath:Datap|Regis64:REG_FPGA|Q[40], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[44], datapath:Datap|Regis64:REG_FPGA|Q[48], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[52]                                         ;
+; datapath:Datap|Regis64:REG_FPGA|Q[3]                         ; Lost Fanouts                   ; datapath:Datap|Regis64:REG_FPGA|Q[7], datapath:Datap|Regis64:REG_FPGA|Q[11],  ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[15], datapath:Datap|Regis64:REG_FPGA|Q[19], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[23], datapath:Datap|Regis64:REG_FPGA|Q[27], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[31], datapath:Datap|Regis64:REG_FPGA|Q[35], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[39], datapath:Datap|Regis64:REG_FPGA|Q[43], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[47], datapath:Datap|Regis64:REG_FPGA|Q[51]  ;
+; datapath:Datap|contador:COUNTER_FPGA|tot[3]                  ; Stuck at GND                   ; datapath:Datap|Regis64:REG_FPGA|Q[62], datapath:Datap|Regis64:REG_FPGA|Q[55], ;
+;                                                              ; due to stuck port clock_enable ; datapath:Datap|Regis64:REG_FPGA|Q[59], datapath:Datap|Regis64:REG_FPGA|Q[57], ;
+;                                                              ;                                ; datapath:Datap|Regis64:REG_FPGA|Q[56]                                         ;
+; Controle:Control|EA.CHECK                                    ; Stuck at GND                   ; datapath:Datap|Regis64:REG_User|Q[62], Controle:Control|EA.NEXT_ROUND         ;
+;                                                              ; due to stuck port data_in      ;                                                                               ;
+; datapath:Datap|ButtonSync0:buttonsync|btn3state.EsperaSoltar ; Lost Fanouts                   ; datapath:Datap|ButtonSync0:buttonsync|btn3state.EsperaApertar                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn2state.EsperaSoltar ; Lost Fanouts                   ; datapath:Datap|ButtonSync0:buttonsync|btn2state.EsperaApertar                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn1state.EsperaSoltar ; Lost Fanouts                   ; datapath:Datap|ButtonSync0:buttonsync|btn1state.EsperaApertar                 ;
+; datapath:Datap|ButtonSync0:buttonsync|btn0state.EsperaSoltar ; Lost Fanouts                   ; datapath:Datap|ButtonSync0:buttonsync|btn0state.EsperaApertar                 ;
++--------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -370,12 +458,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 199   ;
+; Total registers                              ; 52    ;
 ; Number of registers using Synchronous Clear  ; 28    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 187   ;
+; Number of registers using Asynchronous Clear ; 48    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 139   ;
+; Number of registers using Clock Enable       ; 9     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -385,8 +473,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|datapath:Datap|mux21:MUX215|F[0] ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |topo|datapath:Datap|mux21:MUX215|F[1] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|datapath:Datap|mux21:MUX215|F[6] ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |topo|datapath:Datap|mux21:MUX215|F[4] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
@@ -517,29 +605,28 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 199                         ;
-;     CLR               ; 24                          ;
+; arriav_ff             ; 52                          ;
+;     CLR               ; 15                          ;
 ;     CLR SCLR          ; 28                          ;
 ;     ENA               ; 4                           ;
-;     ENA CLR           ; 135                         ;
-;     plain             ; 8                           ;
-; arriav_lcell_comb     ; 187                         ;
+;     ENA CLR           ; 5                           ;
+; arriav_lcell_comb     ; 120                         ;
 ;     arith             ; 28                          ;
 ;         1 data inputs ; 28                          ;
 ;     extend            ; 7                           ;
 ;         7 data inputs ; 7                           ;
-;     normal            ; 152                         ;
+;     normal            ; 85                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 17                          ;
-;         2 data inputs ; 18                          ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 18                          ;
-;         4 data inputs ; 33                          ;
-;         5 data inputs ; 24                          ;
-;         6 data inputs ; 41                          ;
+;         4 data inputs ; 25                          ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 8                           ;
 ; boundary_port         ; 67                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.72                        ;
+; Average LUT depth     ; 2.12                        ;
 +-----------------------+-----------------------------+
 
 
@@ -556,130 +643,133 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Thu Nov 21 11:56:41 2019
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Nov 21 16:05:11 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Simonzada -c Simonzada
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file Regis64.vhd
-    Info (12022): Found design unit 1: Regis64-behv64
-    Info (12023): Found entity 1: Regis64
-Info (12021): Found 2 design units, including 1 entities, in source file Regis8.vhd
-    Info (12022): Found design unit 1: Regis8-behv8
-    Info (12023): Found entity 1: Regis8
-Warning (12090): Entity "mux41" obtained from "mux41.vhd" instead of from Quartus II megafunction library
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file regis64.vhd
+    Info (12022): Found design unit 1: Regis64-behv64 File: C:/Users/Biel/Documents/GitHub/Simonzada/Regis64.vhd Line: 12
+    Info (12023): Found entity 1: Regis64 File: C:/Users/Biel/Documents/GitHub/Simonzada/Regis64.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file regis8.vhd
+    Info (12022): Found design unit 1: Regis8-behv8 File: C:/Users/Biel/Documents/GitHub/Simonzada/Regis8.vhd Line: 13
+    Info (12023): Found entity 1: Regis8 File: C:/Users/Biel/Documents/GitHub/Simonzada/Regis8.vhd Line: 3
+Warning (12090): Entity "mux41" obtained from "mux41.vhd" instead of from Quartus Prime megafunction library File: C:/Users/Biel/Documents/GitHub/Simonzada/mux41.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file mux41.vhd
-    Info (12022): Found design unit 1: mux41-mux4
-    Info (12023): Found entity 1: mux41
+    Info (12022): Found design unit 1: mux41-mux4 File: C:/Users/Biel/Documents/GitHub/Simonzada/mux41.vhd Line: 10
+    Info (12023): Found entity 1: mux41 File: C:/Users/Biel/Documents/GitHub/Simonzada/mux41.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file mux21.vhd
-    Info (12022): Found design unit 1: mux21-mux21arc
-    Info (12023): Found entity 1: mux21
+    Info (12022): Found design unit 1: mux21-mux21arc File: C:/Users/Biel/Documents/GitHub/Simonzada/mux21.vhd Line: 13
+    Info (12023): Found entity 1: mux21 File: C:/Users/Biel/Documents/GitHub/Simonzada/mux21.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file logico0.vhd
-    Info (12022): Found design unit 1: logico0-logica
-    Info (12023): Found entity 1: logico0
+    Info (12022): Found design unit 1: logico0-logica File: C:/Users/Biel/Documents/GitHub/Simonzada/logico0.vhd Line: 18
+    Info (12023): Found entity 1: logico0 File: C:/Users/Biel/Documents/GitHub/Simonzada/logico0.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file div_freq.vhd
-    Info (12022): Found design unit 1: div_freq-topo_beh
-    Info (12023): Found entity 1: div_freq
+    Info (12022): Found design unit 1: div_freq-topo_beh File: C:/Users/Biel/Documents/GitHub/Simonzada/div_freq.vhd Line: 12
+    Info (12023): Found entity 1: div_freq File: C:/Users/Biel/Documents/GitHub/Simonzada/div_freq.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decod7seg.vhd
-    Info (12022): Found design unit 1: decod7seg-decod
-    Info (12023): Found entity 1: decod7seg
+    Info (12022): Found design unit 1: decod7seg-decod File: C:/Users/Biel/Documents/GitHub/Simonzada/decod7seg.vhd Line: 11
+    Info (12023): Found entity 1: decod7seg File: C:/Users/Biel/Documents/GitHub/Simonzada/decod7seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
-    Info (12022): Found design unit 1: contador-arqdtp
-    Info (12023): Found entity 1: contador
+    Info (12022): Found design unit 1: contador-arqdtp File: C:/Users/Biel/Documents/GitHub/Simonzada/contador.vhd Line: 12
+    Info (12023): Found entity 1: contador File: C:/Users/Biel/Documents/GitHub/Simonzada/contador.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file comparador0.vhd
-    Info (12022): Found design unit 1: comparador0-comp
-    Info (12023): Found entity 1: comparador0
-Info (12021): Found 2 design units, including 1 entities, in source file COMP.vhd
-    Info (12022): Found design unit 1: COMP-comp
-    Info (12023): Found entity 1: COMP
-Info (12021): Found 2 design units, including 1 entities, in source file Controle.vhd
-    Info (12022): Found design unit 1: Controle-controle
-    Info (12023): Found entity 1: Controle
+    Info (12022): Found design unit 1: comparador0-comp File: C:/Users/Biel/Documents/GitHub/Simonzada/comparador0.vhd Line: 11
+    Info (12023): Found entity 1: comparador0 File: C:/Users/Biel/Documents/GitHub/Simonzada/comparador0.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file comp.vhd
+    Info (12022): Found design unit 1: COMP-comp File: C:/Users/Biel/Documents/GitHub/Simonzada/COMP.vhd Line: 11
+    Info (12023): Found entity 1: COMP File: C:/Users/Biel/Documents/GitHub/Simonzada/COMP.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file controle.vhd
+    Info (12022): Found design unit 1: Controle-controle File: C:/Users/Biel/Documents/GitHub/Simonzada/Controle.vhd Line: 14
+    Info (12023): Found entity 1: Controle File: C:/Users/Biel/Documents/GitHub/Simonzada/Controle.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux41vetor.vhd
-    Info (12022): Found design unit 1: mux41vetor-mux4
-    Info (12023): Found entity 1: mux41vetor
+    Info (12022): Found design unit 1: mux41vetor-mux4 File: C:/Users/Biel/Documents/GitHub/Simonzada/mux41vetor.vhd Line: 10
+    Info (12023): Found entity 1: mux41vetor File: C:/Users/Biel/Documents/GitHub/Simonzada/mux41vetor.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file buttonsync.vhd
-    Info (12022): Found design unit 1: ButtonSync0-ButtonSyncImpl
-    Info (12023): Found entity 1: ButtonSync0
-Info (12021): Found 2 design units, including 1 entities, in source file SEQ0.vhd
-    Info (12022): Found design unit 1: SEQ0-arc
-    Info (12023): Found entity 1: SEQ0
+    Info (12022): Found design unit 1: ButtonSync0-ButtonSyncImpl File: C:/Users/Biel/Documents/GitHub/Simonzada/buttonsync.vhd Line: 15
+    Info (12023): Found entity 1: ButtonSync0 File: C:/Users/Biel/Documents/GitHub/Simonzada/buttonsync.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file seq0.vhd
+    Info (12022): Found design unit 1: SEQ0-arc File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ0.vhd Line: 11
+    Info (12023): Found entity 1: SEQ0 File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ0.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: datapath-datapath1
-    Info (12023): Found entity 1: datapath
-Info (12021): Found 2 design units, including 1 entities, in source file SEQ1.vhd
-    Info (12022): Found design unit 1: SEQ1-arc
-    Info (12023): Found entity 1: SEQ1
-Info (12021): Found 2 design units, including 1 entities, in source file SEQ2.vhd
-    Info (12022): Found design unit 1: SEQ2-arc
-    Info (12023): Found entity 1: SEQ2
-Info (12021): Found 2 design units, including 1 entities, in source file SEQ3.vhd
-    Info (12022): Found design unit 1: SEQ3-arc
-    Info (12023): Found entity 1: SEQ3
+    Info (12022): Found design unit 1: datapath-datapath1 File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 19
+    Info (12023): Found entity 1: datapath File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file seq1.vhd
+    Info (12022): Found design unit 1: SEQ1-arc File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ1.vhd Line: 11
+    Info (12023): Found entity 1: SEQ1 File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file seq2.vhd
+    Info (12022): Found design unit 1: SEQ2-arc File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ2.vhd Line: 11
+    Info (12023): Found entity 1: SEQ2 File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file seq3.vhd
+    Info (12022): Found design unit 1: SEQ3-arc File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ3.vhd Line: 11
+    Info (12023): Found entity 1: SEQ3 File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ3.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file topo.vhd
-    Info (12022): Found design unit 1: topo-topinho
-    Info (12023): Found entity 1: topo
+    Info (12022): Found design unit 1: topo-topinho File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 16
+    Info (12023): Found entity 1: topo File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 6
 Info (12127): Elaborating entity "topo" for the top level hierarchy
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:Datap"
-Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(23): object "SEQUSER" assigned a value but never read
-Warning (10873): Using initial value X (don't care) for net "luz[5..4]" at datapath.vhd(10)
-Info (12128): Elaborating entity "mux21" for hierarchy "datapath:Datap|mux21:MUX210"
-Info (12128): Elaborating entity "mux41" for hierarchy "datapath:Datap|mux41:MUX410"
-Info (12128): Elaborating entity "mux41vetor" for hierarchy "datapath:Datap|mux41vetor:MUX411"
-Info (12128): Elaborating entity "decod7seg" for hierarchy "datapath:Datap|decod7seg:DECODIFICADOR0"
-Info (10041): Inferred latch for "X[0]" at decod7seg.vhd(13)
-Info (10041): Inferred latch for "X[1]" at decod7seg.vhd(13)
-Info (10041): Inferred latch for "X[2]" at decod7seg.vhd(13)
-Info (10041): Inferred latch for "X[3]" at decod7seg.vhd(13)
-Info (10041): Inferred latch for "X[4]" at decod7seg.vhd(13)
-Info (10041): Inferred latch for "X[5]" at decod7seg.vhd(13)
-Info (10041): Inferred latch for "X[6]" at decod7seg.vhd(13)
-Info (12128): Elaborating entity "ButtonSync0" for hierarchy "datapath:Datap|ButtonSync0:buttonsync"
-Info (12128): Elaborating entity "Regis64" for hierarchy "datapath:Datap|Regis64:REG_FPGA"
-Info (12128): Elaborating entity "Regis8" for hierarchy "datapath:Datap|Regis8:REG_setup"
-Info (12128): Elaborating entity "div_freq" for hierarchy "datapath:Datap|div_freq:DIVFREQ0"
-Info (12128): Elaborating entity "contador" for hierarchy "datapath:Datap|contador:COUNTER_ROUND"
-Info (12128): Elaborating entity "SEQ0" for hierarchy "datapath:Datap|SEQ0:SEQUENCIA0"
-Info (10041): Inferred latch for "output[0]" at SEQ0.vhd(13)
-Info (10041): Inferred latch for "output[1]" at SEQ0.vhd(13)
-Info (10041): Inferred latch for "output[2]" at SEQ0.vhd(13)
-Info (10041): Inferred latch for "output[3]" at SEQ0.vhd(13)
-Info (12128): Elaborating entity "SEQ1" for hierarchy "datapath:Datap|SEQ1:SEQUENCIA1"
-Info (10041): Inferred latch for "output[0]" at SEQ1.vhd(13)
-Info (10041): Inferred latch for "output[1]" at SEQ1.vhd(13)
-Info (10041): Inferred latch for "output[2]" at SEQ1.vhd(13)
-Info (10041): Inferred latch for "output[3]" at SEQ1.vhd(13)
-Info (12128): Elaborating entity "SEQ2" for hierarchy "datapath:Datap|SEQ2:SEQUENCIA2"
-Info (10041): Inferred latch for "output[0]" at SEQ2.vhd(13)
-Info (10041): Inferred latch for "output[1]" at SEQ2.vhd(13)
-Info (10041): Inferred latch for "output[2]" at SEQ2.vhd(13)
-Info (10041): Inferred latch for "output[3]" at SEQ2.vhd(13)
-Info (12128): Elaborating entity "SEQ3" for hierarchy "datapath:Datap|SEQ3:SEQUENCIA3"
-Info (10041): Inferred latch for "output[0]" at SEQ3.vhd(13)
-Info (10041): Inferred latch for "output[1]" at SEQ3.vhd(13)
-Info (10041): Inferred latch for "output[2]" at SEQ3.vhd(13)
-Info (10041): Inferred latch for "output[3]" at SEQ3.vhd(13)
-Info (12128): Elaborating entity "logico0" for hierarchy "datapath:Datap|logico0:LOGICA"
-Info (12128): Elaborating entity "comparador0" for hierarchy "datapath:Datap|comparador0:COMP"
-Info (12128): Elaborating entity "Controle" for hierarchy "Controle:Control"
-Warning (10492): VHDL Process Statement warning at Controle.vhd(22): signal "clock" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Controle.vhd(60): signal "enter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at Controle.vhd(28): inferring latch(es) for signal or variable "PE", which holds its previous value in one or more paths through the process
+Warning (10873): Using initial value X (don't care) for net "LEDR[5..4]" at topo.vhd(9) File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 9
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:Datap" File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 50
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(24): object "SEQUSER" assigned a value but never read File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 24
+Info (12128): Elaborating entity "mux21" for hierarchy "datapath:Datap|mux21:MUX210" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 171
+Info (12128): Elaborating entity "mux41" for hierarchy "datapath:Datap|mux41:MUX410" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 181
+Info (12128): Elaborating entity "mux41vetor" for hierarchy "datapath:Datap|mux41vetor:MUX411" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 182
+Info (12128): Elaborating entity "decod7seg" for hierarchy "datapath:Datap|decod7seg:DECODIFICADOR0" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 183
+Info (10041): Inferred latch for "X[0]" at decod7seg.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/decod7seg.vhd Line: 13
+Info (10041): Inferred latch for "X[1]" at decod7seg.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/decod7seg.vhd Line: 13
+Info (10041): Inferred latch for "X[2]" at decod7seg.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/decod7seg.vhd Line: 13
+Info (10041): Inferred latch for "X[3]" at decod7seg.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/decod7seg.vhd Line: 13
+Info (10041): Inferred latch for "X[4]" at decod7seg.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/decod7seg.vhd Line: 13
+Info (10041): Inferred latch for "X[5]" at decod7seg.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/decod7seg.vhd Line: 13
+Info (10041): Inferred latch for "X[6]" at decod7seg.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/decod7seg.vhd Line: 13
+Info (12128): Elaborating entity "ButtonSync0" for hierarchy "datapath:Datap|ButtonSync0:buttonsync" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 188
+Info (12128): Elaborating entity "Regis64" for hierarchy "datapath:Datap|Regis64:REG_FPGA" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 189
+Info (12128): Elaborating entity "Regis8" for hierarchy "datapath:Datap|Regis8:REG_setup" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 191
+Info (12128): Elaborating entity "div_freq" for hierarchy "datapath:Datap|div_freq:DIVFREQ0" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 192
+Info (12128): Elaborating entity "contador" for hierarchy "datapath:Datap|contador:COUNTER_ROUND" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 193
+Info (12128): Elaborating entity "SEQ0" for hierarchy "datapath:Datap|SEQ0:SEQUENCIA0" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 197
+Info (10041): Inferred latch for "output[0]" at SEQ0.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ0.vhd Line: 13
+Info (10041): Inferred latch for "output[1]" at SEQ0.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ0.vhd Line: 13
+Info (10041): Inferred latch for "output[2]" at SEQ0.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ0.vhd Line: 13
+Info (10041): Inferred latch for "output[3]" at SEQ0.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ0.vhd Line: 13
+Info (12128): Elaborating entity "SEQ1" for hierarchy "datapath:Datap|SEQ1:SEQUENCIA1" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 198
+Info (10041): Inferred latch for "output[0]" at SEQ1.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ1.vhd Line: 13
+Info (10041): Inferred latch for "output[1]" at SEQ1.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ1.vhd Line: 13
+Info (10041): Inferred latch for "output[2]" at SEQ1.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ1.vhd Line: 13
+Info (10041): Inferred latch for "output[3]" at SEQ1.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ1.vhd Line: 13
+Info (12128): Elaborating entity "SEQ2" for hierarchy "datapath:Datap|SEQ2:SEQUENCIA2" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 199
+Info (10041): Inferred latch for "output[0]" at SEQ2.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ2.vhd Line: 13
+Info (10041): Inferred latch for "output[1]" at SEQ2.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ2.vhd Line: 13
+Info (10041): Inferred latch for "output[2]" at SEQ2.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ2.vhd Line: 13
+Info (10041): Inferred latch for "output[3]" at SEQ2.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ2.vhd Line: 13
+Info (12128): Elaborating entity "SEQ3" for hierarchy "datapath:Datap|SEQ3:SEQUENCIA3" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 200
+Info (10041): Inferred latch for "output[0]" at SEQ3.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ3.vhd Line: 13
+Info (10041): Inferred latch for "output[1]" at SEQ3.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ3.vhd Line: 13
+Info (10041): Inferred latch for "output[2]" at SEQ3.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ3.vhd Line: 13
+Info (10041): Inferred latch for "output[3]" at SEQ3.vhd(13) File: C:/Users/Biel/Documents/GitHub/Simonzada/SEQ3.vhd Line: 13
+Info (12128): Elaborating entity "logico0" for hierarchy "datapath:Datap|logico0:LOGICA" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 201
+Info (12128): Elaborating entity "comparador0" for hierarchy "datapath:Datap|comparador0:COMP" File: C:/Users/Biel/Documents/GitHub/Simonzada/datapath.vhd Line: 202
+Info (12128): Elaborating entity "Controle" for hierarchy "Controle:Control" File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 51
+Warning (10492): VHDL Process Statement warning at Controle.vhd(22): signal "clock" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Biel/Documents/GitHub/Simonzada/Controle.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at Controle.vhd(60): signal "enter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Biel/Documents/GitHub/Simonzada/Controle.vhd Line: 60
+Warning (10631): VHDL Process Statement warning at Controle.vhd(28): inferring latch(es) for signal or variable "PE", which holds its previous value in one or more paths through the process File: C:/Users/Biel/Documents/GitHub/Simonzada/Controle.vhd Line: 28
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer datapath:Datap|mux41:MUX410|F
-    Warning (19017): Found clock multiplexer datapath:Datap|mux41:MUX410|F~0
-    Warning (19017): Found clock multiplexer datapath:Datap|mux41:MUX410|F~1
+    Warning (19017): Found clock multiplexer datapath:Datap|mux41:MUX410|F File: C:/Users/Biel/Documents/GitHub/Simonzada/mux41.vhd Line: 6
+    Warning (19017): Found clock multiplexer datapath:Datap|mux41:MUX410|F~0 File: C:/Users/Biel/Documents/GitHub/Simonzada/mux41.vhd Line: 6
+    Warning (19017): Found clock multiplexer datapath:Datap|mux41:MUX410|F~1 File: C:/Users/Biel/Documents/GitHub/Simonzada/mux41.vhd Line: 6
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[4]" is stuck at GND
-    Warning (13410): Pin "LEDR[5]" is stuck at GND
-    Warning (13410): Pin "HEX5[4]" is stuck at GND
-    Warning (13410): Pin "HEX5[5]" is stuck at GND
-    Warning (13410): Pin "HEX3[3]" is stuck at GND
-    Warning (13410): Pin "HEX3[5]" is stuck at GND
-    Warning (13410): Pin "HEX3[6]" is stuck at GND
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 9
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 9
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 9
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 10
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 10
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 10
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 10
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 10
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/Biel/Documents/GitHub/Simonzada/topo.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 4 registers lost all their fanouts during netlist optimizations.
-Warning (20013): Ignored assignments for entity "ghrd_top" -- entity does not exist in design
+Info (17049): 121 registers lost all their fanouts during netlist optimizations.
+Warning (20013): Ignored 24 assignments for entity "ghrd_top" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ghrd_top -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity ghrd_top -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity ghrd_top -section_id Top was ignored
@@ -706,14 +796,14 @@ Warning (20013): Ignored assignments for entity "ghrd_top" -- entity does not ex
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity ghrd_top -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 378 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 186 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 311 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 1128 megabytes
-    Info: Processing ended: Thu Nov 21 11:56:59 2019
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:39
+    Info (21061): Implemented 119 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 4890 megabytes
+    Info: Processing ended: Thu Nov 21 16:05:28 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:35
 
 
