@@ -49,8 +49,8 @@ begin
 									SEL <= '0';
 			
 			
-			when SETUP =>		E1 <= '1';
-			
+			when SETUP =>			E1 <= '1';
+				
 									R1 <= '0';
 									R2 <= '0';
 									E2 <= '0';
@@ -60,10 +60,10 @@ begin
 									if enter = '1' then PE <= PLAY_FPGA; else PE <= SETUP; end if;
 			
 			
-			when PLAY_FPGA =>	E3 <= '1';
+			when PLAY_FPGA =>		E3 <= '1';
 			
 									R1 <= '0';
-									R2 <= '1';
+									R2 <= '0';
 									E1 <= '0';
 									E2 <= '0';
 									E4 <= '0';
@@ -71,11 +71,11 @@ begin
 									if end_FPGA = '1' then PE <= PLAY_USER; else PE <= PLAY_FPGA; end if;
 			
 			
-			when PLAY_USER => E2 <= '1';
+			when PLAY_USER => 		E2 <= '1';
 									E4 <= '1';
 									
 									R1 <= '0';
-									R2 <= '1';
+									R2 <= '0';
 									E1 <= '0';
 									E3 <= '0';
 									SEL <= '0';
@@ -90,7 +90,7 @@ begin
 									end if;
 	
 			
-			when CHECK =>		R1 <= '0';
+			when CHECK =>			R1 <= '0';
 									R2 <= '0';
 									E1 <= '0';
 									E2 <= '0';
@@ -100,7 +100,7 @@ begin
 									if match = '1' then PE <= NEXT_ROUND; else PE <= RESULT; end if;
 							
 							
-			when RESULT =>		PE <= RESULT;
+			when RESULT =>			PE <= RESULT;
 									SEL <= '1';
 			
 									R1 <= '0';
@@ -112,7 +112,7 @@ begin
 									
 								
 								
-			when NEXT_ROUND =>if win = '1' then PE <= RESULT; else PE <= PLAY_FPGA; end if;
+			when NEXT_ROUND =>		if win = '1' then PE <= RESULT; else PE <= PLAY_FPGA; end if;
 									R1 <= '0';
 									R2 <= '0';
 									E1 <= '0';
