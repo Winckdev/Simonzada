@@ -22,9 +22,9 @@ begin
 					tot <= tot + 1;
 				end if;
 			end if;
-		end process;
+		end process; 
 r <= tot;
 -- Comparador:
-Tm <= '1' when (tot < m) else
-'0';
+Tm <= '0' when (tot <= m) else
+'1';
 end arqdtp;

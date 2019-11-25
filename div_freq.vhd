@@ -19,7 +19,7 @@ architecture topo_beh of div_freq is
 Begin
 	P1: process(clock, reset, contador)
 		begin
-			if reset= '0' then
+			if reset= '1' then
 					contador <= x"0000000";
 			elsif clock'event and clock= '1' then
 					contador <= contador + 1;
@@ -34,7 +34,7 @@ Begin
 	
 	P2: process(clock, reset, contador)
 		begin
-			if reset= '0' then
+			if reset= '1' then
 					contador05 <= x"0000000";
 			elsif clock'event and clock= '1' then
 					contador05 <= contador05 + 1;
@@ -49,7 +49,7 @@ Begin
 	
 	P3: process(clock, reset, contador)
 		begin
-			if reset= '0' then
+			if reset= '1' then
 					contador2 <= x"0000000";
 			elsif clock'event and clock= '1' then
 					contador2 <= contador2 + 1;
@@ -64,7 +64,7 @@ Begin
 	
 	P4: process(clock, reset, contador)
 		begin
-			if reset= '0' then
+			if reset= '1' then
 					contador3 <= x"0000000";
 			elsif clock'event and clock= '1' then
 					contador3 <= contador3 + 1;
